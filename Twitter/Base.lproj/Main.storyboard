@@ -72,16 +72,16 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jane Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIn-nn-xuC">
-                                            <rect key="frame" x="89" y="11" width="80" height="22"/>
+                                            <rect key="frame" x="89" y="11" width="68" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="22" id="FYi-hM-9GC"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tweet Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4U-kO-SDH">
-                                            <rect key="frame" x="89" y="37" width="270" height="44"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tweet Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4U-kO-SDH">
+                                            <rect key="frame" x="90" y="37" width="270" height="44"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -99,6 +99,11 @@
                                         <constraint firstItem="XIn-nn-xuC" firstAttribute="top" secondItem="laR-zw-7Pf" secondAttribute="topMargin" id="yWi-Au-Th0"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="profileImageView" destination="U0r-l3-fdx" id="Ht9-s1-Kdw"/>
+                                    <outlet property="tweetContent" destination="q4U-kO-SDH" id="2jD-IL-maA"/>
+                                    <outlet property="userNameLabel" destination="XIn-nn-xuC" id="Nfh-T5-Pmh"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
