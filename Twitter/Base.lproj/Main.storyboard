@@ -72,7 +72,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Home" id="uqG-ca-bMJ">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="yiZ-Ep-bYA"/>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="yiZ-Ep-bYA">
+                            <connections>
+                                <action selector="onLogout:" destination="8VZ-ON-lAI" id="t9U-fy-mnU"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3gI-Dg-T9L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
