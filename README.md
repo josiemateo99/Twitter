@@ -1,8 +1,4 @@
-# Project 3 - *Name of App Here*
-
-**Name of your app** is a basic twitter app to read your tweets.
-
-Time spent: **X** hours spent in total
+# Project 3 - Twitter
 
 ## User Stories
 
