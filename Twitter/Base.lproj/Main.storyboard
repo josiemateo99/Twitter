@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="-479.19999999999999" y="49.925037481259373"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Home-->
         <scene sceneID="mra-Cc-BTY">
             <objects>
-                <tableViewController id="8VZ-ON-lAI" sceneMemberID="viewController">
+                <tableViewController id="8VZ-ON-lAI" customClass="HomeTableViewController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="M1S-7N-47z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,7 +71,9 @@
                             <outlet property="delegate" destination="8VZ-ON-lAI" id="2mU-aR-X7U"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="uqG-ca-bMJ"/>
+                    <navigationItem key="navigationItem" title="Home" id="uqG-ca-bMJ">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="yiZ-Ep-bYA"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3gI-Dg-T9L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -84,6 +86,14 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qTN-gR-Odj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.54385094199999995" green="0.86811809309999999" blue="0.99048328460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <navigationBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" red="0.54385094199999995" green="0.86811809309999999" blue="0.99048328460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="shadowColor" red="0.54385094199999995" green="0.86811809309999999" blue="0.99048328460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" red="0.54385094199999995" green="0.86811809309999999" blue="0.99048328460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </navigationBarAppearance>
                     </navigationBar>
                     <connections>
                         <segue destination="8VZ-ON-lAI" kind="relationship" relationship="rootViewController" id="PZg-Pp-2lf"/>
