@@ -90,14 +90,7 @@ class HomeTableViewController: UITableViewController {
         if indexPath.row + 1 == tweetArray.count {
             loadMoreTweets()
         }
-    }
-    
-    
-    
-    
-    
-    
-    
+    }    
 
     @IBAction func onLogout(_ sender: Any) {
         
